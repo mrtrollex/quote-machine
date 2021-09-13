@@ -1,0 +1,84 @@
+/*IMPORTS*/
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@300&display=swap');
+
+html {
+  font-family: 'Glory', sans-serif;
+  background-image: url('https://img.purch.com/rc/1920x1200/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzAxNS8yMjMvb3JpZ2luYWwvY2FyaW5hLW5lYnVsYS0xOTIwLTEyMDAuanBn');
+}
+
+/*centering and sizing my box for quotes*/
+.quote-box {
+  margin-top: 20vh;
+  max-width: 35vw;
+  margin-right: auto;
+  margin-left: auto;
+
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 0.625rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  letter-spacing: 1px;
+}
+
+.quote-mark {
+  font-size: 26px;
+}
+
+.quote-text {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.author {
+  margin-top: 0.625rem;
+}
+
+.tweet-container {
+  margin-left: auto;
+}
+
+/*Position of Rocket*/
+.newQuote {
+  position: absolute;
+  bottom: 25vh;
+  margin-left: 47vw;
+  margin-right: auto;
+}
+
+.rocket {
+  font-size: 5rem; /*adjusting size of rocket icon*/
+  color: black;
+}
+
+/* effects when you hover over rocket */
+.rocket:hover {
+  transform: scale(1.2);
+  color: #551a8b;
+  opacity: 0.5;
+  transition: opacity 0.1s ease-out;
+  -moz-transition: opacity 0.1s ease-out;
+  -webkit-transition: opacity 0.1s ease-out;
+  -o-transition: opacity 0.1s ease-out;
+}
+
+/* size and position of loading spinner */
+.lds-spinner {
+  left: 47%;
+  margin-top: 25vh;
+  transform: scale(2);
+}
+
+ /* Adjusting size for mobile devices */
+@media only screen and (max-width: 720px) {
+  .quote-text {
+    font-size: 20px;
+  }
+  .newQuote {
+    bottom: 10vh;
+  }
+}
