@@ -11,9 +11,8 @@ const QuoteBox = ({ quotes }) => {
     getMyQuote();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  {
+  
     /*Getting and randomizing my quote*/
-  }
   function getMyQuote() {
     const randomNumber = Math.floor(Math.random() * quotes.length);
     const myQuote = quotes[randomNumber];
@@ -49,9 +48,8 @@ const QuoteBox = ({ quotes }) => {
         </div>
       </div>
       <div className="newQuote">
-        {' '}
         {/*My rocket icon that i use as button*/}
-        <a id="new-quote" href="/#" onClick={() => getMyQuote()}>
+        {/* eslint-disable jsx-a11y/anchor-is-valid */} <a id="new-quote" onClick={() => getMyQuote()}>  
           <FontAwesomeIcon icon={faRocket} className="rocket" />
         </a>
       </div>

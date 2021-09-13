@@ -60,6 +60,7 @@ html {
   transform: scale(1.2);
   color: #551a8b;
   opacity: 0.5;
+  cursor: pointer;
   transition: opacity 0.1s ease-out;
   -moz-transition: opacity 0.1s ease-out;
   -webkit-transition: opacity 0.1s ease-out;
@@ -73,7 +74,7 @@ html {
   transform: scale(2);
 }
 
- /* Adjusting size for mobile devices */
+/* Adjusting size for mobile devices */
 @media only screen and (max-width: 720px) {
   .quote-text {
     font-size: 20px;
